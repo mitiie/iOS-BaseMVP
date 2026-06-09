@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		05D1789E2FD34B0B00E72577 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 05D1789D2FD34B0B00E72577 /* Alamofire */; };
+		05D195AF2FD8865F00E72577 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 05D195AE2FD8865F00E72577 /* SDWebImage */; };
+		05D195B12FD8865F00E72577 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 05D195B02FD8865F00E72577 /* SDWebImageMapKit */; };
+		05D195B42FD8869600E72577 /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 05D195B32FD8869600E72577 /* SDWebImageWebPCoder */; };
+		05D195EA2FD887BF00E72577 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 05D195E92FD887BF00E72577 /* MBProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +22,9 @@
 		ABCDEF1234567890ABCDEF13 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Config/Dev.xcconfig,
+				Config/Release.xcconfig,
+				Config/Staging.xcconfig,
 				Info.plist,
 			);
 			target = 308967A6F92EBF208C15E544 /* iOS-BaseMVP */;
@@ -33,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D195AF2FD8865F00E72577 /* SDWebImage in Frameworks */,
+				05D195B12FD8865F00E72577 /* SDWebImageMapKit in Frameworks */,
+				05D195EA2FD887BF00E72577 /* MBProgressHUD in Frameworks */,
+				05D195B42FD8869600E72577 /* SDWebImageWebPCoder in Frameworks */,
 				05D1789E2FD34B0B00E72577 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +96,10 @@
 			name = "iOS-BaseMVP";
 			packageProductDependencies = (
 				05D1789D2FD34B0B00E72577 /* Alamofire */,
+				05D195AE2FD8865F00E72577 /* SDWebImage */,
+				05D195B02FD8865F00E72577 /* SDWebImageMapKit */,
+				05D195B32FD8869600E72577 /* SDWebImageWebPCoder */,
+				05D195E92FD887BF00E72577 /* MBProgressHUD */,
 			);
 			productName = "iOS-BaseMVP";
 			productReference = 1F74E92085F4BE288059D1E1 /* iOS-BaseMVP.app */;
@@ -98,7 +113,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					308967A6F92EBF208C15E544 = {
 						CreatedOnToolsVersion = 26.0.1;
@@ -117,6 +132,9 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				05D1789C2FD34B0B00E72577 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				05D195AD2FD8865F00E72577 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				05D195B22FD8869600E72577 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
+				05D195E82FD887BF00E72577 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = 927AE8C793BB0F3F60AADD18 /* Products */;
 			projectDirPath = "";
@@ -185,6 +203,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -198,6 +217,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -216,7 +236,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "iOS-BaseMVP/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -243,7 +263,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "iOS-BaseMVP/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +316,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -316,6 +337,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -356,6 +378,30 @@
 				minimumVersion = 5.12.0;
 			};
 		};
+		05D195AD2FD8865F00E72577 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.7;
+			};
+		};
+		05D195B22FD8869600E72577 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageWebPCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.0;
+			};
+		};
+		05D195E82FD887BF00E72577 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -363,6 +409,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 05D1789C2FD34B0B00E72577 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		05D195AE2FD8865F00E72577 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05D195AD2FD8865F00E72577 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		05D195B02FD8865F00E72577 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05D195AD2FD8865F00E72577 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		05D195B32FD8869600E72577 /* SDWebImageWebPCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05D195B22FD8869600E72577 /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
+			productName = SDWebImageWebPCoder;
+		};
+		05D195E92FD887BF00E72577 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05D195E82FD887BF00E72577 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,0 +1,22 @@
+//
+//  Prod.xcconfig
+//  iOS-BaseMVP
+//
+//  Created by mitie on 11/1/26.
+//
+
+APP_ENV = RELEASE
+
+// MARK: - App
+ENABLE_LOGGING = NO
+IS_USING_KEYCHAINS = YES
+
+// MARK: - Network
+API_SCHEME = https
+API_HOST = api-dev.yourdomain.com
+
+// MARK: - Google Ads
+ADS_APP_ID = ca-app-pub-5889155949011891~6837999997
+REVENUECAT_PUBLICKEY = appl_ZQJKFbnwBqbUwhCkVMEdYSxusON
+APPSFLYER_APP_ID = 6763209193
+APPSFLYER_DEV_KEY = VqXoXLTmo3pWxXNbupf8ER
