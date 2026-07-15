@@ -1,6 +1,6 @@
 //
 //  CommonLabel.swift
-//  DIYWallpaper
+//  iOS-BaseMVP
 //
 //  Created by mitie on 4/3/26.
 //
